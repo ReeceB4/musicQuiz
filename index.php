@@ -98,28 +98,37 @@
                             array('wrong','correct','wrong','wrong'),
                             array('wrong','correct','wrong','wrong')),
                             array(array('waiting for love','Look at me now','dance in mirror', 'ghost town'),
-                                  array('Akon','','','AKA'),
-                                  array('Cali swag district','','',''),
-                                  array('','T-pain','',''),
-                                  array('','','Young,wild and free',''),
-                                  array('','','','Drake'),
+                                  array('Akon','Jamie Foxx','Chris Brown','AKA'),
+                                  array('Cali swag district','Drake ','Eminem','Justin Bieber'),
+                                  array('Ed Sheeran','T-pain','Maroon 5','Ariana Grande'),
+                                  array('Sugar',,'Young,wild and free',''),
+                                  array('Beyonce','Kendrick lamar','Post Malone','Drake'),
                                   array('Slow motion','','',''),
-                                  array('','','Drake',''),
+                                  array('Jay Z','Travis Scott','Drake','Shawn Mendes'),
                                   array('','Jika','',''),
                                   array('','Only','',''),
-                                  array('J.cole','','',''),
-                                  array('','','','Kid Cudi'),
+                                  array('J.cole','Travis Scott','Kid ink','The weekend'),
+                                  array('Justin Timberlake','Sam Smith','Lil Wayne','Kid Cudi'),
                                   array('','September','',''),
-                                  array('','','Kanye West',''),
-                                  array('','Micheal Jackson','',''),
+                                  array('Shawn Mendes','Bruno Mars','Kanye West','Tyga'),
+                                  array('Elvis Presley','Micheal Jackson','Elton John','Jay Z'),
                                   array('','','','Pon de Replay'),
-                                  array('','','Da Baby',''),
+                                  array('Khalid','Travis Scott','Da Baby','Lil Wayne'),
                                   array('Taste','','',''),
                                   array('','Black eye peas','',''),
                                   array('','Isnt she lovely','','')) 
                         );
                         ?>     
-                        
+                            <form role="form" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+                            <?php 
+                                for($x=0; $x<count($large[0]);++$x){
+                                    echo "/n". '<h2>'. $large[0][$x]. '</h2>';
+                                    echo '</br> <img class=image src="'.$large[1][$x].'">';
+                                        for($y=0;$y<count($large[4][0]);++$y){
+                                        echo '</br><button class="button" type="radio" name"'.$large[2][$x].'"value="'.$large[3][$x][$y]. '">'.$large[4][$x][$y].'</button>';
+                                        }}
+                            ?>
+                            <button class="submitButton" type="submit" value="submit" name="submit">Answer</button>
                         <?php
 
                         if(isset($_POST['submit'])){
