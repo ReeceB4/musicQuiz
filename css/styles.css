@@ -1,0 +1,146 @@
+
+.question-container{
+    background-color:lightskyblue;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+.bulb{
+   display:block;
+   margin-right: 10%;
+   margin-left: auto;
+   height:150px;
+}
+/*button*/
+.button {
+    display:block;
+    border-radius: 4px;
+    background-color:#d84498;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }/*button*/ 
+  
+ .user-icon{
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   width:80px;
+ }
+ .container1{
+   text-align: center;
+   margin-right:25% ;
+   margin-left: 25%;
+   background-color:#2f479d;
+   border-radius: 30px;
+   height:300px;
+   padding-top: 10px;  
+ }
+  .head{
+   text-align: center;
+   font-size: 55px;
+   font-family:'Luckiest Guy', cursive ;
+   color:#2bfed2; 
+ }
+ .col-sm{
+   font-size: 30px;
+   font-family:'Luckiest Guy', cursive ;
+   color: white;
+ }
+ .container2{
+   background-color:#191618 ;
+   /*background-image: url("../images/background.png");*/
+ }
+ h2, h3{
+   font-family:'Luckiest Guy', cursive ;
+ }
+ .wizard{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .wizard2{
+   display:block;
+   margin-left:25%;
+   margin-right:25%;
+   width:200px ;
+ }
+ .quest-pb{
+   margin-left:25%;
+ }
+ .slogan{
+   font-size:25px;
+   text-align: center;
+   font-family:'Acme', sans-serif;
+   color:#d84498 ;
+ }
+ .navImage{
+   height:100px ;
+ }
+ .nav-item{
+   font-size: 30px;
+   font-family: 'Acme', sans-serif;
+ }
+ .welcome{
+  font-family:'Acme', sans-serif;
+  color:#fcfd37 ;
+  text-align: center;
+  font-size: 30px;
+ }
+ .exit{
+   background-color: #fcfd37;
+   height:60px ;
+   width:80px;
+   text-align: center;
+   padding-top: 10px;
+   margin-top: 30px;
+   font-size: 20px;
+   font-family: 'Trade Winds', cursive;
+ }
+ .button1 {
+  background-color:#2f479d ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
