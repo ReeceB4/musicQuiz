@@ -339,7 +339,7 @@
 
                     <h4 id="questionColor"><?php echo $result['Question'];?></h4>
                     <?php
-                        foreach ($)['Answers'] as $Tag  => $Answer){
+                        foreach ($result)['Answers'] as $Tag  => $Answer){
                         $Label = 'question-'.$QuestionNo. '-answers-' . $Tag ;
                         ?>
                         <div id="">
