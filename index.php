@@ -128,7 +128,7 @@
                 'rightAnswer' => 'A'
             ),
             'question4' => array(
-                'Question' => 'Tell me the artist wrote this?',
+                'Question' => 'Which artist wrote "Buy you a drank"?',
                 'Answers' => array(
                     'A' => 'Ed Sheeran',
                     'B' => 'T-pain',
@@ -148,7 +148,7 @@
             'rightAnswer' => 'C'
             ),
             'question6' => array(
-                'Question' => 'Who wrote the song',
+                'Question' => 'Who wrote the song, "Hotling Bling"?',
                 'Answers' => array(
                     'A' => 'Beyonce',
                     'B' => 'Kendrick lamar',
@@ -158,7 +158,7 @@
                 'rightAnswer' => 'D'
             ),
             'question7' => array(
-                'Question' => 'Which song did he sing?',
+                'Question' => 'Which song did Trey Songz sing?',
                 'Answers' => array(
                     'A' => 'Slow Motion',
                     'B' => 'Party in the U.S.A',
@@ -168,7 +168,7 @@
                 'rightAnswer' => 'A'
             ),
             'question8' => array(
-            'Question' => 'Who sang this track?',
+            'Question' => 'Who sang "The motto"?',
             'Answers' => array(
                 'A' => 'Jay Z',
                 'B' => 'Travis Scott',
@@ -178,7 +178,7 @@
             'rightAnswer' => 'C'
             ),
             'question9' => array(
-                'Question' => 'Which one of his most popular tracks?',
+                'Question' => 'Which track is one of Mi Casas most popular tracks?',
                 'Answers' => array(
                     'A' => 'Despacito',
                     'B' => 'Jika',
@@ -188,7 +188,7 @@
                 'rightAnswer' => 'B'
             ),
             'question10' => array(
-                'Question' => 'One of her hit tracks?',
+                'Question' => 'One of Nicki Minaj hit tracks?',
                 'Answers' => array(
                     'A' => 'We Found Love',
                     'B' => 'Only',
@@ -198,7 +198,7 @@
                 'rightAnswer' => 'B'
             ),
             'question11' => array(
-                'Question' => 'Who wrote this song?',
+                'Question' => 'Who wrote this song,"Work out"?',
                 'Answers' => array(
                     'A' => 'J.cole',
                     'B' => 'Travis Scott',
@@ -208,7 +208,7 @@
                 'rightAnswer' => 'A'
             ),
             'question12' => array(
-                'Question' => 'Name the track artist?',
+                'Question' => 'Name the artist who wroye "Day n Nite"',
                 'Answers' => array(
                     'A' => 'Justin Timberlake',
                     'B' => 'Sam Smith',
@@ -218,7 +218,7 @@
                 'rightAnswer' => 'D'
             ),
             'question13' => array(
-                'Question' => 'Which is one of there popular tracks?',
+                'Question' => 'Which is one of Earth, Wind and Fires popular tracks?',
                 'Answers' => array(
                     'A' => 'Happy',
                     'B' => 'September',
@@ -228,7 +228,7 @@
                 'rightAnswer' => 'B'
             ),
             'question14' => array(
-                'Question' => 'Which artist sang this hit?',
+                'Question' => 'Which artist sang this hit, "Gold digger"?',
                 'Answers' => array(
                     'A' => 'Shawn Mendes',
                     'B' => 'Bruno Mars',
@@ -268,7 +268,7 @@
                 'rightAnswer' => 'C'
             ),
             'question18' => array(
-                'Question' => 'Which song did he sing?  ',
+                'Question' => 'Which song did Tyga sing?  ',
                 'Answers' => array(
                     'A' => 'Taste',
                     'B' => 'DNA',
@@ -288,7 +288,7 @@
                 'rightAnswer' => 'B'
             ),
             'question20' => array(
-                'Question' => 'The song he dedicated to his daughter?',
+                'Question' => 'The song Stevie Wonder dedicated to his daughter?',
                 'Answers' => array(
                     'A' => 'Baby One More Time',
                     'B' => 'Isnt she lovely',
