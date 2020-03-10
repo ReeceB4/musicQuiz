@@ -71,7 +71,7 @@
         <br>
         <img src="images/QuizName.png" alt="Image of quiz wizard" class="wizard">
         <br>
-        <button type="submit" class="button" style="vertical-align:middle"><span>Play Quiz </span></button>
+        <button type="submit" class="button" style="vertical-align:middle"><a href="#play"><span>Play Quiz </span></a></button>
         <br>
         <br>
         <br>
@@ -90,7 +90,7 @@
     <div class="exit">
     <a href="#exit" style="color:black">X</a>
     </div>
-    <h3 class="quest-pb">Question 1 to 20</h3>
+    <h3 class="quest-pb" id="play">Question 1 to 20</h3>
     <img src="" alt="">
     <!--Response Bar-->
     <br>
@@ -349,7 +349,8 @@
                         <br>
                         <?php } ?>
                         <input class="button button span button span:after button:hover span button:hover span:after" type="submit" value="SUBMIT" />
-                }
+                <br>
+                <br>
             </form>
             <?php
             }
