@@ -31,6 +31,7 @@
                 </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Highscore</a>
+               
             </li>
             </ul>
         </div>
@@ -49,8 +50,20 @@
                  20
                 </div>
                 <div class="col-sm" >
-                    <br>High Scores<br>
-
+                    <br>
+                    <?php
+                    $points=0;
+                     if($points <10){
+                        echo "<h2s> Highscore <br> $points of 20</h2>";
+                        
+                    } else if ($points <= 15) {
+                        echo "<h2>Highscore <br> $points of 20</h2>";
+                        
+                    } else {
+                        echo "<h2>Highscore <br> $points of 20</h2>";
+                        
+                    }
+                ?>
                 </div>
             </div>
         </div>
@@ -314,7 +327,7 @@
                 echo "<br>";
                 echo "<h2>NICE JOB! </h2>";
             } else {
-                echo "<h2>YOUR FINAL RESULT : $points of 20</h2>";
+                echo "<h2>Your Final Score : $points of 20</h2>";
                 echo "<h2>You are a music GENIUS!</h2>";
             }
         }
