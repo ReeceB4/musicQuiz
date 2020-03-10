@@ -73,28 +73,14 @@
     <br>
     <br>
     <br>
-    <img src="images/logo.gif" alt="Image of quiz wizard" class="wizard2"><img src="images/hint.jpg" alt="lightbulb" class="bulb">
+    <img src="images/logo.gif" alt="Image of quiz wizard" class="wizard2">
     <div class="exit">
     <a href="#exit" style="color:black">X</a>
     </div>
-    <h3 class="quest-pb">Question 1  of 20</h3>
-    <!--Progress Bar-->
-
-    <div class="question-container">
+    <h3 class="quest-pb">Question 1 to 20</h3>
     <img src="" alt="">
     <!--Response Bar-->
-    <h2>Question 1</h2>
-        <button type="text" class="button1">A</button>
-        <button type="text" class="button1">B</button><br>
-        <button type="text" class="button1">C</button>
-        <button type="text" class="button1">D</button><br>
-
-    <button type="submit">Next</button>
-    </div>
     <br>
-    <div  class="question-container">
-    <img src="" alt="">
-    <!--Response Bar-->
     <div class="question-container">
     <?php
         $Questions = array(
@@ -304,7 +290,7 @@
             $Answers = $_POST['answers'];
 
             $points = 0;
-            echo "<h1 class>Your Music Report </h1> ";
+            echo "<br>.<h1 class>Your Music Report </h1> ";
             foreach($Questions as $QuestionNo => $result) {
                 echo $result['Question'].'<br>';
 
@@ -313,14 +299,14 @@
                     echo 'Right answer: <span style="color:green; font-size:20px">'.$result['Answers'][$result['rightAnswer']].'</span>';
                 }
                 else {
-                    echo 'You chose: <span style="color: blue; font-size:20px;">'.$result ['Answers'][$Answers[$QuestionNo]].'</span><br>';
+                    echo 'You chose: <span style="color:#2f479d ; font-size:20px;">'.$result ['Answers'][$Answers[$QuestionNo]].'</span><br>';
                     echo 'You are correct: <span style="color: green; font-size:20px">'.$result['Answers'][$Answers[$QuestionNo]].'</span>';
                     $points++;
                 }
-                echo '<br/>';
+                echo '<br/><hr>';
             }
             if($points <10){
-                echo "<h2>Your Final Score is :$points of 20</h2>";
+                echo "<h2s>Your Final Score is :$points of 20</h2>";
                 echo "<br>";
                 echo "<h2>Unlucky mahn, I am sure you can do better next time</h2>";
             } else if ($points <= 15) {
@@ -344,7 +330,7 @@
                         ?>
                         <div id="">
                             <input type="radio" name="answers[<?php echo $QuestionNo ; ?>]" id="<?php echo $Label ; ?>" value="<?php echo $Tag ; ?>"required/>
-                            <label for="<?php echo $Tag ; ?>"><?php echo $Tag ; ?>) <?php echo $Answer ; ?></label>
+                            <label class="label" for="<?php echo $Tag ; ?>"><?php echo $Tag ; ?>) <?php echo $Answer ; ?></label>
                         </div>
                         <?php } ?>
                         <br>

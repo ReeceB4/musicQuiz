@@ -1,15 +1,9 @@
 
 .question-container{
     background-color:lightskyblue;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
-}
-.bulb{
-   display:block;
-   margin-right: 10%;
-   margin-left: auto;
-   height:150px;
 }
 /*button*/
 .button {
@@ -84,7 +78,7 @@
    background-color:#191618 ;
    /*background-image: url("../images/background.png");*/
  }
- h2, h3{
+ h1,h2, h3,h4{
    font-family:'Luckiest Guy', cursive ;
  }
  .wizard{
@@ -143,7 +137,9 @@
   margin-bottom: 10px;
   border-radius: 30px;
 }
-
+.label{
+  font-family:'Acme', sans-serif;
+}
 .results{
 
 }
