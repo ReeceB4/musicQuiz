@@ -79,7 +79,6 @@
     </div>
     <h3 class="quest-pb">Question 1  of 20</h3>
     <!--Progress Bar-->
-    <div class="progress-bar" data-label=""></div>
 
     <div class="question-container">
     <img src="" alt="">
@@ -96,6 +95,7 @@
     <div  class="question-container">
     <img src="" alt="">
     <!--Response Bar-->
+    <div class="question-container">
     <?php
         $Questions = array(
             'question1' => array(
@@ -304,20 +304,20 @@
             $Answers = $_POST['answers'];
 
             $points = 0;
-            echo "<h1>Your Music Report </h1> ";
+            echo "<h1 class>Your Music Report </h1> ";
             foreach($Questions as $QuestionNo => $result) {
                 echo $result['Question'].'<br>';
 
                 if($Answers[$QuestionNo] != $result['rightAnswer']){
                     echo 'You chose: <span style="color:red; font-size: 20px;">'.$result['Answers'][$Answers[$QuestionNo]].'</span><br>';
-                    echo 'Right answer: <span style="color:green;">'.$result['Answers'][$result['rightAnswer']].'</span>';
+                    echo 'Right answer: <span style="color:green; font-size:20px">'.$result['Answers'][$result['rightAnswer']].'</span>';
                 }
                 else {
                     echo 'You chose: <span style="color: blue; font-size:20px;">'.$result ['Answers'][$Answers[$QuestionNo]].'</span><br>';
-                    echo 'You are correct: <span style="color: green;">'.$result['Answers'][$Answers[$QuestionNo]].'</span>';
+                    echo 'You are correct: <span style="color: green; font-size:20px">'.$result['Answers'][$Answers[$QuestionNo]].'</span>';
                     $points++;
                 }
-                echo '<br/>'
+                echo '<br/>';
             }
             if($points <10){
                 echo "<h2>Your Final Score is :$points of 20</h2>";
@@ -339,7 +339,7 @@
 
                     <h4 id="questionColor"><?php echo $result['Question'];?></h4>
                     <?php
-                        foreach ($result)['Answers'] as $Tag  => $Answer){
+                        foreach ($result['Answers'] as $Tag  => $Answer){
                         $Label = 'question-'.$QuestionNo. '-answers-' . $Tag ;
                         ?>
                         <div id="">
@@ -355,7 +355,8 @@
             <?php
             }
             ?>
-
+            </div>
+    </div>
 
 
 
