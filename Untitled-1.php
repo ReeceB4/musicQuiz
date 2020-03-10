@@ -3,99 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
-    <script src="scripts.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-
- 
-                           
-                      
-    <!--Home Page-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#191618">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.gif" alt="quiz name" class="navImage">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color:#d84498">Home <span class="sr-only">(current)</span></a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Highscore</a>
-            </li>
-            </ul>
-        </div>
-</nav>
-    <!--Nav Bar-->
-    <div class="container2">
-        <br>
-        <h4 class="welcome" id="exit">Welcome !</h4>
-        <h2 class="head" >Music Quiz !</h2>
-        <p class="slogan">Who doesnt love music ...</p>
-        <div class="container1">
-        <img src="images/icon.gif" alt="user-icon" class="user-icon">
-            <div class="row">
-                <div class="col-sm">
-                    <br>Questions<br>
-                 20
-                </div>
-                <div class="col-sm" >
-                    <br>High Scores<br>
-
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <img src="images/QuizName.png" alt="Image of quiz wizard" class="wizard">
-        <br>
-        <button type="submit" class="button" style="vertical-align:middle"><span>Play Quiz </span></button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        </div>
     
-    <!--End of home page------------------------------------------------->
-        
-    <!--Question page----------------------------------------------->
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="images/logo.gif" alt="Image of quiz wizard" class="wizard2"><img src="images/hint.jpg" alt="lightbulb" class="bulb">
-    <div class="exit">
-    <a href="#exit" style="color:black">X</a>
-    </div>
-    <h3 class="quest-pb">Question 1  of 20</h3>
-    <!--Progress Bar-->
-    <div class="progress-bar" data-label=""></div>
-
-    <div class="question-container">
-    <img src="" alt="">
-    <!--Response Bar-->
-    <h2>Question 1</h2>
-        <button type="text" class="button1">A</button>
-        <button type="text" class="button1">B</button><br>
-        <button type="text" class="button1">C</button>
-        <button type="text" class="button1">D</button><br>
-
-    <button type="submit">Next</button>
-    </div>
-    <br>
-    <div  class="question-container">
-    <img src="" alt="">
-    <!--Response Bar-->
     <?php
         $Questions = array(
             'question1' => array(
@@ -106,7 +17,7 @@
                         'C' => 'Dance in mirror',
                         'D' => 'Ghost town'
                     ),
-                    'rightAnswer' => 'B'
+                    'CorrectAnswer' => 'B'
             ),
             'question2' => array(
                     'Question' => 'Which artist sang "Baddest"?',
@@ -116,7 +27,7 @@
                         'C' => 'Chris Brown',
                         'D' => 'AKA'
                     ),
-                    'rightAnswer' => 'D'
+                    'CorrectAnswer' => 'D'
                 ),
             'question3' => array(
                 'Question' => 'Who sang "Teach Me How To Dougie?',
@@ -126,7 +37,7 @@
                     'C' => 'Eminem',
                     'D' => 'Justin Bieber'
                 ),
-                'rightAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
             'question4' => array(
                 'Question' => 'Tell me the artist wrote this?',
@@ -136,7 +47,7 @@
                     'C' => 'Maroon 5',
                     'D' => 'Ariana Grande'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question5' => array(
             'Question' => 'Which song is Wiz Khalifas famous song?',
@@ -146,7 +57,7 @@
                 'C' => 'Young, Wild and Free',
                 'D' => 'Uptown Funk'
             ),
-            'rightAnswer' => 'C'
+            'CorrectAnswer' => 'C'
             ),
             'question6' => array(
                 'Question' => 'Who wrote the song',
@@ -156,7 +67,7 @@
                     'C' => 'Post Malone',
                     'D' => 'Drake'
                 ),
-                'rightAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
             'question7' => array(
                 'Question' => 'Which song did he sing?',
@@ -166,7 +77,7 @@
                     'C' => 'Sorry',
                     'D' => 'No Scrubs'
                 ),
-                'rightAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
             'question8' => array(
             'Question' => 'Who sang this track?',
@@ -176,7 +87,7 @@
                 'C' => 'Drake',
                 'D' => 'Shawn Mendes'
             ),
-            'rightAnswer' => 'C'
+            'CorrectAnswer' => 'C'
             ),
             'question9' => array(
                 'Question' => 'Which one of his most popular tracks?',
@@ -186,7 +97,7 @@
                     'C' => 'One More Time',
                     'D' => 'Bad and Boujee'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question10' => array(
                 'Question' => 'One of her hit tracks?',
@@ -196,7 +107,7 @@
                     'C' => 'Bodak Yellow',
                     'D' => 'Hollaback Girl'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question11' => array(
                 'Question' => 'Who wrote this song?',
@@ -206,7 +117,7 @@
                     'C' => 'Kid ink',
                     'D' => 'The Weekend'
                 ),
-                'rightAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
             'question12' => array(
                 'Question' => 'Name the track artist?',
@@ -216,7 +127,7 @@
                     'C' => 'Lil Wayne',
                     'D' => 'Kid Cudi'
                 ),
-                'rightAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
             'question13' => array(
                 'Question' => 'Which is one of there popular tracks?',
@@ -226,7 +137,7 @@
                     'C' => 'Ms. Jackson',
                     'D' => 'Cry Me a River'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question14' => array(
                 'Question' => 'Which artist sang this hit?',
@@ -236,7 +147,7 @@
                     'C' => 'Kanye West',
                     'D' => 'Tyga'
                 ),
-                'rightAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
             'question15' => array(
                 'Question' => 'All I have to say is "Thriller"?',
@@ -246,7 +157,7 @@
                     'C' => 'Elton John',
                     'D' => 'Jay Z'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question16' => array(
                 'Question' => 'Which is one of Rihannas songs?',
@@ -256,7 +167,7 @@
                     'C' => 'Drop It Like It’s Hot',
                     'D' => 'Pon de Repay'
                 ),
-                'rightAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
             'question17' => array(
                 'Question' => 'Recent hit "BOP" who is the artist?  ',
@@ -266,7 +177,7 @@
                     'C' => 'Da Baby',
                     'D' => 'Lil Wayne'
                 ),
-                'rightAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
             'question18' => array(
                 'Question' => 'Which song did he sing?  ',
@@ -276,7 +187,7 @@
                     'C' => 'In Da Club',
                     'D' => 'Runaway'
                 ),
-                'rightAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
             'question19' => array(
                 'Question' => 'Who sang this old classsic "Boom boom pow"?  ',
@@ -286,7 +197,7 @@
                     'C' => 'The Beatles',
                     'D' => 'The Rolling Stones'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
             'question20' => array(
                 'Question' => 'The song he dedicated to his daughter?',
@@ -296,79 +207,16 @@
                     'C' => 'Single Ladies (Put a Ring on It)',
                     'D' => 'I Wanna Dance With Somebody'
                 ),
-                'rightAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             )
         );
             
-        if(isset($_POST['answers'])) {
-            $Answers = $_POST['answers'];
-
-            $points = 0;
-            echo "<h1>Your Music Report </h1> ";
-            foreach($Questions as $QuestionNo => $result) {
-                echo $result['Question'].'<br>';
-
-                if($Answers[$QuestionNo] != $result['rightAnswer']){
-                    echo 'You chose: <span style="color:red; font-size: 20px;">'.$result['Answers'][$Answers[$QuestionNo]].'</span><br>';
-                    echo 'Right answer: <span style="color:green;">'.$result['Answers'][$result['rightAnswer']].'</span>';
-                }
-                else {
-                    echo 'You chose: <span style="color: blue; font-size:20px;">'.$result ['Answers'][$Answers[$QuestionNo]].'</span><br>';
-                    echo 'You are correct: <span style="color: green;">'.$result['Answers'][$Answers[$QuestionNo]].'</span>';
-                    $points++;
-                }
-                echo '<br/>'
-            }
-            if($points <10){
-                echo "<h2>Your Final Score is :$points of 20</h2>";
-                echo "<br>";
-                echo "<h2>Unlucky mahn, I am sure you can do better next time</h2>";
-            } else if ($points <= 15) {
-                echo "<h2>Your Final Score : $points of 20</h2>";
-                echo "<br>";
-                echo "<h2>NICE JOB! </h2>";
-            } else {
-                echo "<h2>YOUR FINAL RESULT : $points of 20</h2>";
-                echo "<h2>You are a music GENIUS!</h2>";
-            }
-        }
-        else{
+        if(isset($_POST['']))
             ?>
-            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="">
-                <?php foreach ($Questions as $QuestionNo=> $result){ ?>
-
-                    <h4 id="questionColor"><?php echo $result['Question'];?></h4>
-                    <?php
-                        foreach ($)['Answers'] as $Tag  => $Answer){
-                        $Label = 'question-'.$QuestionNo. '-answers-' . $Tag ;
-                        ?>
-                        <div id="">
-                            <input type="radio" name="answers[<?php echo $QuestionNo ; ?>]" id="<?php echo $Label ; ?>" value="<?php echo $Tag ; ?>"required/>
-                            <label for="<?php echo $Tag ; ?>"><?php echo $Tag ; ?>) <?php echo $Answer ; ?></label>
-                        </div>
-                        <?php } ?>
-                        <br>
-                        <?php } ?>
-                        <input class="button button span button span:after button:hover span button:hover span:after" type="submit" value="SUBMIT" />
+            <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="">
+                <?php foreach (=>){ ?>
+                    <h4 id=""
                 }
             </form>
-            <?php
-            }
-            ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
